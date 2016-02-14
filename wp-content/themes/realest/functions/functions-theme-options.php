@@ -29,6 +29,7 @@ function register_rl_theme_settings() { //add this function in admin_init action
 	register_setting( 'realest-options', 'twitter_url');
 	register_setting( 'realest-options', 'linkedin_url');
 	register_setting( 'realest-options', 'instagram_url');
+	register_setting( 'realest-options', 'youtube_url');
 	register_setting( 'realest-options', 'sticky_back_to_top');
 	// register_setting( 'realest-options', 'pinterest_url');
 	// register_setting( 'realest-options', 'tumblr_url');
@@ -62,7 +63,9 @@ function register_rl_theme_settings() { //add this function in admin_init action
 	add_settings_field('twitter_url',"Twitter link", "display_twitter_url", "realest-options", "Realest Options");
 	add_settings_field('linkedin_url',"Linkedin link", "display_linkedin_url", "realest-options", "Realest Options");
 	add_settings_field('instagram_url',"Instagram link", "display_instagram_url", "realest-options", "Realest Options");
+	add_settings_field('youtube_url',"Youtube link", "display_youtube_url", "realest-options", "Realest Options");
 	add_settings_field('sticky_back_to_top',"Sticky Back to Top Button", "display_back_to_top", "realest-options", "Realest Options");
+
 }
 
 function realest_theme_settings() {
@@ -93,6 +96,9 @@ function realest_theme_settings() {
 <?php } ?>
 <?php function display_linkedin_url() { ?>
 	<input type="text" name="linkedin_url" id="linkedin_url" value="<?php echo get_option('linkedin_url'); ?>" placeholder="Your linkedin link" />
+<?php } ?>
+<?php function display_youtube_url() { ?>
+	<input type="text" name="youtube_url" id="youtube_url" value="<?php echo get_option('youtube_url'); ?>" placeholder="Your youtube link" />
 <?php } ?>
 <?php function display_back_to_top() { ?>
 	<input type="checkbox" name="sticky_back_to_top" id="sticky_back_to_top" value="1" <?php checked(1, get_option('sticky_back_to_top'), true); ?> /> 
