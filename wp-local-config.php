@@ -4,7 +4,7 @@
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
-define('SITENAME',''); //put a sitename . This will be the prefix of table
+ //put a sitename . This will be the prefix of table
 define('DB_NAME', 'database_name_here');
 define('DB_USER', 'root');
 define('DB_PASSWORD', '');
@@ -59,7 +59,7 @@ $table_prefix  = SITENAME . '_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 
 //Remove contact form 7 css and js, location must be before abspath

@@ -18,6 +18,7 @@
  *
  * @package WordPress
  */
+define('SITENAME','');
 if ( file_exists( dirname( __FILE__ ) . '/wp-local-config.php') ) {
 	define( 'WP_LOCAL_DEV', true );
 	include( dirname( __FILE__ ) . '/wp-local-config.php' );
@@ -28,7 +29,7 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-local-config.php') ) {
 	define('DB_PASSWORD', 'password_here');
 	define('DB_HOST', 'localhost');
 
-}
+
 
 //custom content directory
 //define('WP_CONTENT_DIR', dirname(__FILE__) . '/content');
@@ -118,3 +119,4 @@ require_once(ABSPATH . 'wp-settings.php');
 
 //increase memory limit
 //define('WP_MEMORY_LIMIT', '96M');
+}
