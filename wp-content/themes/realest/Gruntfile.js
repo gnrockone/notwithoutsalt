@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                 tasks: ['imagemin']
             },
             php: {
-                files: ['*.php'],
+                files: ['*.php','functions/*.php'],
                 options: {
                     livereload: 35729
                 }
@@ -169,7 +169,7 @@ module.exports = function(grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src : ['style.css', 'js/*.js', '../../uploads/*.{png,jpg,jpeg,gif,webp,svg}','css/all.css','*.php']
+                    src : ['style.css', 'js/*.js', '../../uploads/*.{png,jpg,jpeg,gif,webp,svg}','css/all.css','*.php','functions/*.php']
                 },
                 options: {
                     //proxy: "local.dev",

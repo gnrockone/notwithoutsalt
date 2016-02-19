@@ -12,6 +12,8 @@ wp-local-config.php
 !/wp-content/themes/realest/*
 /wp-content/themes/realest/node_modules
 /wp-content/themes/realest/bower_components
+/wp-content/themes/realest/images
+/wp-content/themes/realest/img
 /wp-content/plugins/*
 !/wp-content/plugins/show-current-template
 !/wp-content/plugins/show-current-template/*
