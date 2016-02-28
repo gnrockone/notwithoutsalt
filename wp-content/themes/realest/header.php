@@ -10,7 +10,12 @@
  */
 ?>
 <!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?>><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" <?php language_attributes(); ?>><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="" <?php language_attributes(); ?>>
+<!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>"><!--gets the charset utf-8-->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +28,7 @@
 	wp_head(); ?>
 </head>
 <?php if ( is_front_page() ):
-	$front_page_class = array('front-page','home-page'); 
+	$front_page_class = array('front-page'); 
 	else: 
 	$front_page_class = null; 
 	endif;
@@ -31,7 +36,8 @@
 <?php do_action('before_body_start'); ?>
 <body <?php body_class( $front_page_class ); ?> >
 <?php do_action('after_body_start'); ?>
-	<div id="main-container" class="container-fluid">
+
+	<div id="main-container" class="container-fluid main-container">
 		<!--header-->
 		<?php if ( has_header_image() ): ?>
 		<div class="container">

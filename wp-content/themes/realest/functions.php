@@ -12,6 +12,14 @@ require get_template_directory() . '/functions/functions-breadcrumbs.php';
 require get_template_directory() . '/functions/functions-comments.php';
 require get_template_directory() . '/functions/functions-theme-options.php';
 
+
+
+require get_template_directory() . '/widgets/widgets-social-networks.php';
+add_action('widgets_init', function() {
+
+	register_widget( 'realest_widget_social');
+});
+
 /*
 	==================================================
 	| Add theme support
@@ -31,10 +39,11 @@ add_theme_support('html5',array('search-form','comment-form','gallery','comment-
 add_theme_support('title-tag');
 
 
+
 function rl_go_top_btn() {
-	echo '<a href="#" class="go-top">Go Top</a>';
-	echo '<h1>' . get_option('sticky_back_to_top') .'test'. '</h1>';
+	echo '<a href="#" class="go-top"><i class="fa fa-arrow-up"></i></a>';
 }
+//to add sticky back to top, set it in realest panel options.
 if( get_option('sticky_back_to_top')) { 
 	add_action('before_body_end','rl_go_top_btn'); 
 }
