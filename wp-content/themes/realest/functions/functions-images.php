@@ -14,7 +14,7 @@ if (function_exists('add_theme_support')) {
 	//@param3 - height in px
 	//@param4 - crop(boolean) || array  - sample: array('center','center') hardcrop center center
 	//array(x axis, y axis)
-	//add_image_size('500x500',500,500,array('center','center'));
+	add_image_size('square250',250,250,array('center','center'));
 }
 
 ?>

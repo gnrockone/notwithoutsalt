@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(grunt) {
-    var hostProxy = '';
+    var hostProxy = 'www.notwithoutsalt.dev';
     // load all grunt tasks matching the `grunt-*` pattern
     require('load-grunt-tasks')(grunt);
 
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
                 tasks: ['imagemin']
             },
             php: {
-                files: ['*.php','functions/*.php'],
+                files: ['*.php','functions/*.php','widgets/*.php'],
                 options: {
                     livereload: 35729
                 }
@@ -169,7 +169,7 @@ module.exports = function(grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src : ['style.css', 'js/*.js', '../../uploads/*.{png,jpg,jpeg,gif,webp,svg}','css/all.css','*.php','functions/*.php']
+                    src : ['style.css', 'js/*.js', '../../uploads/*.{png,jpg,jpeg,gif,webp,svg}','css/all.css','*.php','functions/*.php','widgets/*.php']
                 },
                 options: {
                     //proxy: "local.dev",

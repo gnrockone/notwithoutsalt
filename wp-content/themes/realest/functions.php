@@ -1,4 +1,6 @@
 <?php
+
+define('THEME_SLUG', 'Realest');
 require get_template_directory() . '/functions/functions-scripts.php'; //script functions
 require get_template_directory() . '/functions/functions-menus.php'; //menu functions
 require get_template_directory() . '/functions/functions-menus-bootstrap-walker.php';

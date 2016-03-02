@@ -5,6 +5,9 @@ set up grunt browser sync proxy
 run grunt
 run grunt watch
 
+-copy wordpress files in your designated folder
+-delete wp-content
+-git clone bitbucket starter theme
 
 
 

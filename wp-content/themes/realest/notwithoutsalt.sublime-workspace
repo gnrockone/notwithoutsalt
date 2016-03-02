@@ -1,0 +1,994 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bs",
+				"bs3-textarea	bs3-textarea"
+			],
+			[
+				"bs3-carouse",
+				"bs3-carousel	bs3-carousel"
+			],
+			[
+				"bs-toolbar",
+				"bs3-toolbar	bs3-button-toolbar"
+			],
+			[
+				"bs-navbar",
+				"bs3-navbar	bs3-navbar"
+			],
+			[
+				"nav",
+				"nav	nav"
+			],
+			[
+				"get_",
+				"get_header	(front-page.php)"
+			],
+			[
+				"theloop",
+				"theloop	The Loop"
+			],
+			[
+				"i",
+				"i	Tag"
+			],
+			[
+				"CPT_",
+				"CPT_Articles"
+			],
+			[
+				"get_page_tem",
+				"get_page_templates"
+			],
+			[
+				"wp_enqueue",
+				"wp_enqueue_style"
+			],
+			[
+				"filtering",
+				"filteringsecond"
+			],
+			[
+				"gethe",
+				"get_header	(home.php)"
+			],
+			[
+				"get",
+				"getheader	(get_header.sublime-snippet)"
+			],
+			[
+				"WP_Quer",
+				"WP_Query"
+			],
+			[
+				"if",
+				"ifelse	<?php if (…) ?> … <?php else ?> … <?php endif ?>"
+			],
+			[
+				"thel",
+				"theloop	The Loop"
+			],
+			[
+				"ex",
+				"extends"
+			],
+			[
+				"after",
+				"after_widget"
+			],
+			[
+				"stri",
+				"strip_tags"
+			],
+			[
+				"get_field",
+				"get_field_id"
+			],
+			[
+				"get_fiel",
+				"get_field_id"
+			],
+			[
+				"af",
+				"after_widget"
+			],
+			[
+				"bef",
+				"before_widget"
+			],
+			[
+				"get_f",
+				"get_field_name"
+			],
+			[
+				"get_fie",
+				"get_field_id"
+			],
+			[
+				"__",
+				"__construct"
+			],
+			[
+				"WP_",
+				"WP_Widget"
+			],
+			[
+				"new",
+				"new_instance"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"esc",
+				"esc_attr	(front-page.php)"
+			],
+			[
+				"about_whi",
+				"about_whitney_2"
+			],
+			[
+				"register",
+				"register_widget"
+			],
+			[
+				"face",
+				"facebook_url"
+			],
+			[
+				"widget",
+				"widgets_init	(functions-widgets.php)"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"Di",
+				"Display	(stylesheet.css)"
+			],
+			[
+				"Pl",
+				"PlayfairDisplay	(stylesheet.css)"
+			],
+			[
+				"wp_",
+				"wp_enqueue_style"
+			],
+			[
+				"php",
+				"php	<?php … ?>"
+			],
+			[
+				"wp_en",
+				"wp_enqueue_script"
+			],
+			[
+				"WP_QU",
+				"WP_Query($args"
+			],
+			[
+				"tog",
+				"toggleClass〔function〕"
+			],
+			[
+				"recom",
+				"recommended_posts"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"pre",
+				"preventDefault"
+			],
+			[
+				"get_template",
+				"get_template_directory_uri"
+			],
+			[
+				"no",
+				"noConflict〔function〕"
+			],
+			[
+				"get_queried",
+				"get_queried_object_id"
+			],
+			[
+				"medi",
+				"mediaUploader"
+			],
+			[
+				"get_template_di",
+				"get_template_directory_uri	(functions.php)"
+			],
+			[
+				"portfol",
+				"portfolioAwesomeBlock"
+			],
+			[
+				"BE",
+				"BebasNeue"
+			],
+			[
+				"Bree",
+				"BreeSerif-Regular"
+			],
+			[
+				"Bre",
+				"BreeSerif-Regular"
+			],
+			[
+				"Ubuntu",
+				"Ubuntu-Regular"
+			],
+			[
+				"onc",
+				"onclick	Attr"
+			],
+			[
+				"vert",
+				"vertical-align: 〔property〕"
+			],
+			[
+				"list-style",
+				"list-style-type"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"US",
+				"Username	(index.php)"
+			],
+			[
+				"first",
+				"firstname"
+			],
+			[
+				"firstname",
+				"firstname"
+			],
+			[
+				"the_exer",
+				"the_excerpt"
+			],
+			[
+				"SIZE",
+				"SIZE"
+			],
+			[
+				"get_te",
+				"get_template_directory_uri"
+			],
+			[
+				"js",
+				"js"
+			],
+			[
+				"get_templ",
+				"get_template_directory_uri"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"learnin",
+				"learningWordpress_setup"
+			],
+			[
+				"get_the_author",
+				"get_the_author_meta"
+			],
+			[
+				"get_the_auto",
+				"get_the_author_meta"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"dropdown",
+				"dropdown"
+			],
+			[
+				"gly",
+				"glyphicon	(index.html)"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"p",
+				"p	Tag"
+			],
+			[
+				"ge",
+				"getDay"
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"inline",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "\n\n\n\n*****For the Company/Manager*****\nWhat is your day or week like?\nWhat are the most exciting part of this company?\nDo you conduct trainings?\nWhat is the nature of your business? Are your projects more on web maintenance or from start, Web dev? Software Dev?\n\n\n\n\n\n\nAbout Development*****\nWhat is your workflow here in web/software dev?\n\nHow do you normally onboard new employees?\n\nHow is the team structured? is there backend/UX teams? test and qa teams?Do the company work together or \"i give you project, you finish from design to its functionality to deployment\"\n\nIs the team open for questions/ or is the team open to lend their time to teach other teammates if the teammates are having a hard time?\n\nDo i have the chance to learn other things aside from my position?\nDo i have the chance to be assign partly as lets say graphics design, software dev\n\n",
+			"settings":
+			{
+				"buffer_size": 858,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/GnRock/Documents/Important User and Password and Other Details.txt",
+			"settings":
+			{
+				"buffer_size": 1664,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "ang first paragraph mo kay greetings then ano ang iyong intention.. like \"I am interested in applying for a position of a web developer. I have known that you are looking for people fit for the position\" something like that po\n\nano ang ma offer mo sa client.. like \"I have developed different sites using the following languages.... I also have knowledge with... I have worked for an Australian who develops and maintains different websites\" etc\n\nso basically, ilapag mo ang iyong mga skills, experiences, what can u offer to the company\n\n\"I am confident that the skills I have are fit for the position you are offering.... I am very much willing to learn and work with your company\"\ndapat ibenta mo po self mo\ntapos ilagay mo sa last na \"thank you for your kind consideration. I am hoping to hear from you soon\"\n\nGreetings. I am Lorenz Gino D. Royo, a six months experience web developer.\n\n",
+			"settings":
+			{
+				"buffer_size": 891,
+				"line_ending": "Windows",
+				"name": "ang first paragraph mo kay greetings then ano ang"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 242.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"set",
+				"Set Syntax: PHP"
+			],
+			[
+				"Snippet: 	",
+				"Snippet: WordPress File Header"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"CSS",
+				"Set Syntax: CSS"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"aut",
+				"Autoprefix CSS"
+			],
+			[
+				"sy",
+				"Set Syntax: SQL"
+			],
+			[
+				"git ",
+				"Git: Init"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"Package Cont",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest"
+	],
+	"file_history":
+	[
+		"/D/GnRock/Documents/Resume/Portfolios/Jack Harlem/details.txt",
+		"/D/GnRock/Documents/Resume/Portfolios/Ampa Enterprise/details.txt",
+		"/D/GnRock/Documents/Resume/Portfolios/Marasigan Gold/details.txt",
+		"/D/GnRock/Documents/Resume/Portfolios/Arcare/details.txt",
+		"/D/GnRock/Documents/Resume/Portfolios/gathering/My Practices/Luxo Estate/css/font.css",
+		"/D/GnRock/Documents/Resume/Portfolios/gathering/My Practices/Luxo Estate/css/style.css",
+		"/D/xampp/htdocs/backup/natureandphotography/.gitignore",
+		"/D/xampp/htdocs/backup/natureandphotography/index.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/js/realest.js",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/read me.txt",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/style.scss",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/tag.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/taxonomy.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/singleslider.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/single.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/searchmethods.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/searchheader.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/searchform.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/front-page.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/home.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/index.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/functions.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/footer.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/comments.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/category.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/author.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/archive.php",
+		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/404.php",
+		"/D/GnRock/Projects/Practice Practice/CSS Practice/Off The Past/off the past.html",
+		"/D/GnRock/Projects/Practice Practice/CSS Practice/Made By Jack/index.html",
+		"/D/GnRock/Projects/Practice Practice/CSS Practice/First Shape Countdown Landing Page/js/main.js",
+		"/D/GnRock/Projects/Practice Practice/CSS Practice/BonFire/bonfire.html",
+		"/D/GnRock/Projects/Elevated Business/widgets.php",
+		"/D/GnRock/Documents/Resume/Portfolios/FME Finance/details.txt",
+		"/D/GnRock/Documents/Resume/Portfolios/Aurora Adventures/details.txt",
+		"/D/GnRock/Documents/Resume/Portfolios/Global Office Machines/details.txt",
+		"/D/GnRock/Documents/Resume/Portfolios/Cutting Edge/details.txt",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/index.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/home.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/front-page.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/home.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-images.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/installment-readme.txt",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-scripts.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-scripts.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-scripts.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/plugins.txt",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/read me.txt",
+		"/D/GnRock/Projects/Web Development/Wordpress Things/Plugins/PLUGINS.txt",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/widgets/widgets-social-networks.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/header.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/bower_components/flexslider/flexslider.css",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-config.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-widgets.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-theme-options.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-shortcodes.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-post.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-menus-bootstrap-walker.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-menus.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-images.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-custom-posts.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-custom-taxonomies.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-custom-made.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-comments.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-breadcrumbs.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/style.css",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/package.json",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-menus.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-widgets.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-theme-options.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-shortcodes.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-post.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-menus-bootstrap-walker.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-custom-taxonomies.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-custom-made.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-comments.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-breadcrumbs.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/style.scss",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/style.css",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/jupiter/framework/admin/assets/js/widgets.js",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/category.php",
+		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/widgets/widgets-popular-posts.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-custom-made.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/framework/functions/post-pagination.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/search.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/single.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/home.php",
+		"/D/GnRock/Projects/Web Development/Wordpress Things/sites to be practice.txt",
+		"/D/xampp/htdocs/notwithoutsalt/installment-readme.txt",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/index.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/bower.json",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/Gruntfile.js",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/Gruntfile.js",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/Gruntfile.js",
+		"/D/xampp/htdocs/notwithoutsalt/wp-local-config.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-config.php",
+		"/D/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/read me.txt",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/installing a new wordpress for local(xampp).txt",
+		"/D/xampp/htdocs/notwithoutsalt/readme.html",
+		"/D/xampp/htdocs/backup/wp-content/themes/iamfoodblog/category.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/search.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/front-page.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/date.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/comments.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/author.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/archive-book.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/archive.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/single.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/searchheader.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/searchform.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/search.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/category.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/page.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/index.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/rtl.css",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/page.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/index.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/header.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/footer.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/custom.css",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/comments.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/archive-portfolio.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/archive-news.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/archive.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/404.php"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"realest",
+			"500",
+			"prestigeonlineservices",
+			"paged",
+			"$skin",
+			"Artbees",
+			"enable_sites",
+			"widget",
+			"function_path",
+			"widget_path",
+			"class_path",
+			"navbar-nav li",
+			"navbar-default",
+			"4",
+			"col-sm-12 col-xs-12",
+			"mk-jupiter-icon-square",
+			"mk_init_widgets_chosen",
+			"$icon",
+			"widget_social",
+			"<aside",
+			"div",
+			"<div",
+			"search",
+			"sep",
+			"get_theme_mod",
+			"nnp",
+			"video",
+			"Video",
+			"li",
+			"ul",
+			"query",
+			"querys",
+			"upwork",
+			"/",
+			"http://prestigeonlineservices.net/",
+			"www.prestigeonlineservices.dev",
+			"http://prestigeonlineservices.net/",
+			"iamfoodblog",
+			"http://leanconsulting.ph",
+			"http://thepadmin-001-site4.atempurl.com",
+			"iswqjhnk23",
+			"Book",
+			"book",
+			"Book",
+			"books",
+			"Books",
+			"books",
+			"Books",
+			"books",
+			"Books",
+			"?>",
+			"<?php",
+			"comment_nav",
+			"container",
+			"blog-container",
+			" ?>",
+			"();\n",
+			"font-size: 15px",
+			"article",
+			"?>",
+			"<?php",
+			"main",
+			"_set",
+			"wpb",
+			".$",
+			".'",
+			"?>",
+			"<?php echo ",
+			"<a",
+			"=.",
+			".=",
+			"<?php",
+			"facebook",
+			"Facebook",
+			"facebook",
+			"Facebook",
+			"facebook",
+			"Facebook",
+			"facebook",
+			"twitter",
+			"title",
+			"20",
+			"47",
+			"50",
+			"facebook",
+			"page",
+			"10px",
+			"post",
+			"div",
+			"linkedin_url",
+			"nnp",
+			"<h2",
+			"e-text",
+			"text",
+			"</li>",
+			"</a>",
+			"row",
+			"ner\">",
+			"row",
+			"4",
+			"2",
+			"3",
+			"2",
+			"sive",
+			"peg",
+			".png",
+			"';",
+			"echo '",
+			"a",
+			"nnp",
+			"\\",
+			"iamfoodblog",
+			"jQuery",
+			"yourthemename",
+			"Url",
+			"linkedin_url",
+			"offset",
+			"200",
+			"$",
+			"’",
+			"‘",
+			"http://www.iamartisan.com/",
+			"facebook_url",
+			"twitter_url",
+			"Facebook",
+			"facebook",
+			"Facebook",
+			"facebook"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								857,
+								857
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_name": "",
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/GnRock/Documents/Important User and Password and Other Details.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1174,
+								1174
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 907.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 891,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								891,
+								891
+							]
+						],
+						"settings":
+						{
+							"auto_name": "ang first paragraph mo kay greetings then ano ang",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "notwithoutsalt.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"functions",
+				"functions.php"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"header",
+				"header.php"
+			],
+			[
+				"function",
+				"functions\\functions-post.php"
+			],
+			[
+				"theme",
+				"functions\\functions-theme-options.php"
+			],
+			[
+				"widget",
+				"functions\\functions-widget-blocks.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\GnRock\\Projects\\Web Development\\Wordpress Workflow\\test project.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 282.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -14,7 +14,7 @@
 <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>><![endif]-->
 <!--[if IE 8]><html class="no-js lt-ie9" <?php language_attributes(); ?>><![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="" <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>"><!--gets the charset utf-8-->
