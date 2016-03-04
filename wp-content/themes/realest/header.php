@@ -37,7 +37,7 @@
 <body <?php body_class( $front_page_class ); ?> >
 <?php do_action('after_body_start'); ?>
 
-	<div id="main-container" class="container-fluid main-container">
+	<div id="main-container" class="container-fluid main-container no-sidepadding">
 		<!--header-->
 		<?php if ( has_header_image() ): ?>
 		<div class="container">
@@ -50,7 +50,7 @@
 		<!--container for container width menu-->
 		<div class="container-fluid">
 			<nav class="navbar navbar-default navbar-static-top" role="navigation">
-				<div class="container-fluid">
+				<div class="container-fluid no-sidepadding">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
 						data-target="#navbar-collapse-1" aria-expanded="false">
@@ -60,8 +60,9 @@
 							<span class="icon-bar"></span>
 						</button>
 						<a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-							<?php 
-								$logo = null;
+							<?php
+								$src = get_bloginfo('template_directory') ."/images/not-without-salt.png";
+								$logo = '<img src="/wp-content/uploads/not-without-salt-1.png"/>';
 								if ($logo) :
 									echo $logo;
 								else:
@@ -74,7 +75,7 @@
 						//get_search_form() has navbar-right thats why use custom search;
 						//get_search_form() gets searchform.php
 						//get search form for header - searchheader.php
-						get_template_part('searchheader');
+						//get_template_part('searchheader');
 			            wp_nav_menu( array(
 			                'menu'              => 'primary',
 			                'theme_location'    => 'primary',
