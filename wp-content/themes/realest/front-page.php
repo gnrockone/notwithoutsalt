@@ -5,27 +5,32 @@
 	 * @link http://codex.wordpress.org/Function_Reference/WP_Query
 	 *
 	 */
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+	$page = (get_query_var('page')) ? get_query_var('page') : 1;
 	$args = array(
-		
 		//Type & Status Parameters
-		'post_type'   => 'post',
-		'post_status' => 'publish',
-					
+		'post_type'      => 'post',
+		'post_status'    => 'publish',
+		
 		//Order & Orderby Parameters
-		'order'               => 'DESC',
-		'orderby'             => 'date',
+		'order'          => 'DESC',
+		'orderby'        => 'date',
 		
 		//Pagination Parameters
-		'posts_per_page'         => 3,
-		'paged'                  => get_query_var('paged')
+		'posts_per_page' => 2,
+		'paged'          => $page,
+		'total' => 6
 
 	);
 
-	$query = new WP_Query( $args );
+	$wp_query = new WP_Query( $args );
+	// print_r($wp_query);
+	// global $wp_query;
+	// print_r($wp_query);
 	$count=0;
-	//print_r($query); ?>
+	//print_r($wp_query); ?>
 	
-	<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
+	<?php if ( $wp_query->have_posts() ) : while ( $wp_query->have_posts() ) : $wp_query->the_post();
 		if($count == 0): $count++; ?>
 			<?php $image = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 			<header class="header text-center" style="background:url('<?php echo $image; ?>'); height:auto; ">
@@ -35,12 +40,10 @@
 			<nav class="sticky-nav" style="background:url('wp-content/uploads/filter-bg-1.jpg');">
 				
 			</nav>
-			<!-- <div class="sticky-nav">
 
-			</div> -->
 			<main class="container-fluid" role="main">
 			<div class="container">
-				<div class="col-lg-8 col-md-8">
+				<div class="col-lg-8 col-md-8 loadmore-container">
 		<?php else: ?>
 					<article <?php post_class(); ?>>
 						<div class="space"></div>
@@ -62,20 +65,30 @@
 						</div>
 					</article>
 		<?php endif;
-	endwhile; ?>
-				</div><!--.col-lg-8 col-md-8-->
+	endwhile;  ?>
+	<?php Realest::custom_pager();
+	Realest::custom_pagination();
+	?>
+	</div><!--.col-lg-8 col-md-8-->
 				
 	<?php else : ?>
 
 		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 	
 	<?php endif; ?>
+
 			<div class="col-lg-4 col-md-4">
 				<?php if(is_active_sidebar('sidebar1')) ?>
 				<?php dynamic_sidebar('sidebar1' ); ?>
 			</div>
+			
 			</div><!--.container-->
-			</main>
+			<div class="row text-center">
+				<?php
+				//rl_custom_pager();
 
+				 ?>
+			</div>
+			</main>
 <?php get_footer(); ?>
 

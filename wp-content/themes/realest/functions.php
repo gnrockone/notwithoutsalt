@@ -40,10 +40,9 @@ add_theme_support('html5',array('search-form','comment-form','gallery','comment-
 // provide it for us.
 add_theme_support('title-tag');
 
-
-
 function rl_go_top_btn() {
-	echo '<a href="#" class="go-top"><i class="fa fa-arrow-up"></i></a>';
+	//do not add # in href to avoid other smooth scrolling who are targeting $('a[href*=#')
+	echo '<a href="" class="go-top"><i class="fa fa-arrow-up"></i></a>';
 }
 //to add sticky back to top, set it in realest panel options.
 if( get_option('sticky_back_to_top')) { 

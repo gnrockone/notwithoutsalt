@@ -4,8 +4,40 @@
 		"selected_items":
 		[
 			[
+				"rl_cust",
+				"rl_custom_pager	(functions-custom-made.php)"
+			],
+			[
+				"previous_post",
+				"previous_posts_link"
+			],
+			[
+				"template_",
+				"template_redirect"
+			],
+			[
+				"bs3-",
+				"bs3-carousel	bs3-carousel"
+			],
+			[
+				"bs3-sele",
+				"bs3-input:select:h	bs3-input-select-h"
+			],
+			[
 				"bs3-navbar",
 				"bs3-navbar:basic	bs3-navbar-basic"
+			],
+			[
+				"bs3-nav",
+				"bs3-navbar:form	bs3-navbar-form"
+			],
+			[
+				"custom",
+				"custom_pagination"
+			],
+			[
+				"brya",
+				"bryant"
 			],
 			[
 				"strip",
@@ -26,10 +58,6 @@
 			[
 				"op",
 				"opacity	opacity()"
-			],
-			[
-				"brya",
-				"bryant_bold"
 			],
 			[
 				"font-",
@@ -66,10 +94,6 @@
 			[
 				"bs3-icon",
 				"bs3-thumbnail:content	bs3-thumbnail-content"
-			],
-			[
-				"bs3-",
-				"bs3-textarea	bs3-textarea"
 			],
 			[
 				"bs3-sucess",
@@ -432,54 +456,86 @@
 	"buffers":
 	[
 		{
-			"file": "header.php",
-			"settings":
-			{
-				"buffer_size": 3721,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "footer.php",
-			"settings":
-			{
-				"buffer_size": 549,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "single.php",
-			"settings":
-			{
-				"buffer_size": 1849,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "<?php get_header(); ?>\n	<?php\n	/**\n	 * The WordPress Query class.\n	 * @link http://codex.wordpress.org/Function_Reference/WP_Query\n	 *\n	 */\n	$args = array(\n		\n		//Type & Status Parameters\n		'post_type'   => 'post',\n		'post_status' => 'publish',\n					\n		//Order & Orderby Parameters\n		'order'               => 'DESC',\n		'orderby'             => 'date',\n		\n		//Pagination Parameters\n		'posts_per_page'         => 3,\n		'paged'                  => get_query_var('paged')\n\n	);\n\n	$query = new WP_Query( $args );\n	$count=0;\n	//print_r($query); ?>\n	\n	<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();\n		if($count == 0): $count++; ?>\n			<?php $image = wp_get_attachment_url( get_post_thumbnail_id() ); ?>\n			<header class=\"header text-center\" style=\"background:url('<?php echo $image; ?>'); height:auto; \">\n				<h2 class=\"header-latest\">Latest Journal Post</h2>\n				<h1 class=\"header-title\"><?php the_title(); ?></h1>\n			</header>\n			<nav class=\"sticky-nav\" style=\"background:url('wp-content/uploads/filter-bg-1.jpg');\">\n				\n			</nav>\n\n			<main class=\"container-fluid\" role=\"main\">\n			<div class=\"container\">\n				<div class=\"col-lg-8 col-md-8\">\n		<?php else: ?>\n					<article <?php post_class(); ?>>\n						<div class=\"space\"></div>\n						<h1 class=\"thepost-title\"><a href=\"<?php echo the_permalink(); ?>\"><?php the_title(); ?></a></h1>\n						<div class=\"thepost-content\"><?php the_content(); ?></div>\n						<div class=\"space\"></div>\n						<h1 class=\"thepost-title\"><a href=\"<?php echo the_permalink(); ?>\"><?php the_title(); ?></a></h1>\n						<div class=\"thepost-recipe\"><?php the_field('post_recipe') ?></div>\n						<div class=\"space\"></div>\n						<div class=\"thepost-meta\">\n							<ol class=\"breadcrumb no-padding\">\n								<li><a href=\"#\" class=\"themeta-comments\"><?php comments_number('0 Comment', '1 Comment', '% Comment' );?></a>\n								</li>\n								<li>\n									<a href=\"#\" class=\"themeta-share\">Share</a>\n								</li>\n								<li><a href=\"<?php echo the_permalink(); ?>\" class=\"themeta-permalink\">Permalink</a></li>\n							</ol>\n						</div>\n					</article>\n		<?php endif;\n	endwhile; ?>\n				</div><!--.col-lg-8 col-md-8-->\n				\n	<?php else : ?>\n\n		<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>\n	\n	<?php endif; ?>\n			<div class=\"col-lg-4 col-md-4\">\n				<?php if(is_active_sidebar('sidebar1')) ?>\n				<?php dynamic_sidebar('sidebar1' ); ?>\n			</div>\n			</div><!--.container-->\n			</main>\n\n<?php get_footer(); ?>\n\n",
 			"file": "front-page.php",
-			"file_size": 2600,
-			"file_write_time": 131014871491634696,
 			"settings":
 			{
-				"buffer_size": 2472,
+				"buffer_size": 2817,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "style.scss",
+			"file": "functions/functions-scripts.php",
 			"settings":
 			{
-				"buffer_size": 4352,
+				"buffer_size": 4621,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "widgets/widgets-social-networks.php",
+			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 8966,
+				"buffer_size": 2369,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/realest.js",
+			"settings":
+			{
+				"buffer_size": 1793,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<?php \n\n\n\n ?>",
+			"file": "pagelooper.php",
+			"file_size": 410,
+			"file_write_time": 131022721929747445,
+			"settings":
+			{
+				"buffer_size": 13,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "functions/functions-custom-made.php",
+			"settings":
+			{
+				"buffer_size": 9171,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/GnRock/Projects/Web Development/upwork_template.txt",
+			"settings":
+			{
+				"buffer_size": 2342,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/twentyfifteen/index.php",
+			"settings":
+			{
+				"buffer_size": 1765,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "the sliders\n1st slider\nKoala Bear at left ( good close up) and background\ncity building(s) in AU ...\nat right text says  \"Learn and Discover Australia...\"\n\n2nd slider\nShows a class room with college students ...\nand text that says\n\"Engage warmly with people from all over the world...\"\n\n3rd slider\nShows successful people at work\nand text that says\n\"Become a leader in your field...\"\n\nno colors for now ...\nall text and images must be in gray scale",
+			"settings":
+			{
+				"buffer_size": 448,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/GnRock/Projects/Web Development/Wordpress Things/wordpress template/wp-content/themes/twentyfifteen/content.php",
+			"settings":
+			{
+				"buffer_size": 1702,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -490,17 +546,21 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 392.0,
-		"last_filter": "php",
+		"height": 242.0,
+		"last_filter": "html",
 		"selected_items":
 		[
 			[
-				"php",
-				"Set Syntax: PHP"
-			],
-			[
 				"html",
 				"Set Syntax: HTML"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
 			],
 			[
 				"remove",
@@ -607,27 +667,73 @@
 		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes",
 		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest",
 		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/js",
 		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/widgets"
 	],
 	"file_history":
 	[
+		"/D/GnRock/Downloads/code-snippets/code-snippets/php/class-snippet.php",
+		"/D/GnRock/Downloads/code-snippets/code-snippets/php/views/edit.php",
+		"/D/GnRock/Downloads/code-snippets/code-snippets/php/class-code-snippets.php",
+		"/D/GnRock/Downloads/code-snippets/code-snippets/code-snippets.php",
+		"/D/GnRock/Downloads/post-snippets.2.5.3/post-snippets/src/PostSnippets/WPEditor.php",
+		"/D/GnRock/Downloads/post-snippets.2.5.3/post-snippets/post-snippets.php",
+		"/D/xampp/htdocs/notwithoutsalt/installment-readme.txt",
+		"/D/xampp/htdocs/notwithoutsalt/readme.html",
+		"/D/GnRock/Projects/Web Development/Wordpress Things/wordpress template/wp-content/themes/twentyfifteen/content.php",
+		"/D/GnRock/Downloads/infinite-scroll-and-load-more-ajax-pagination/infinite-scroll-and-load-more-ajax-pagination/index.php",
+		"/D/GnRock/Downloads/infinite-scroll.2.6.2/infinite-scroll/infinite-scroll.php",
+		"/D/GnRock/Downloads/infinite-scroll.2.6.2/infinite-scroll/behaviors/manual-trigger.js",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-custom-made.php",
+		"/D/GnRock/VRJ Farms/VRJ Farms Payroll/Banana Files/E-ONB.txt",
+		"/D/GnRock/Documents/Important User and Password and Other Details.txt",
+		"/D/GnRock/Projects/Practice Practice/CSS Practice/Made By Jack/bootstrap/Template.html",
+		"/D/GnRock/Projects/Practice Practice/CSS Practice/BonFire/bonfire.html",
+		"/D/GnRock/Projects/Practice Practice/CSS Practice/BonFire/css/style.css",
+		"/D/GnRock/Projects/Practice Practice/CSS Practice/BonFire/css/bs-style.css",
+		"/D/GnRock/Projects/Practice Practice/CSS Practice/BonFire/bonfire-bs.html",
+		"/D/GnRock/Projects/Practice Practice/CSS Practice/BonFire/css/bootstrap-gridlayout.css",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/widgets/widgets-social-networks.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/js/realest.js",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/style.scss",
+		"/D/GnRock/Downloads/wp-pagenavi.2.89.1/wp-pagenavi/core.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-custom-made.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/bower.json",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-comments.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/front-page.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/header.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/footer.php",
 		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/single.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-scripts.php",
+		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/comments.php",
 		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/front-page.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/functions/functions-menus-bootstrap-walker.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/functions/test.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/functions/functions-custom-posts.php",
+		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/functions/functions-custom-made.php",
+		"/D/GnRock/Downloads/wp-pagenavi.2.89.1/wp-pagenavi/admin.php",
+		"/D/GnRock/Downloads/wp-pagenavi.2.89.1/wp-pagenavi/wp-pagenavi.php",
+		"/D/GnRock/Downloads/wp-pagenavi.2.89.1/wp-pagenavi/readme.txt",
+		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/framework/functions/general-functions.php",
+		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/framework/functions/post-pagination.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-comments.php",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/bower.json",
+		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/style.scss",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/jupiter/comments.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/comments.php",
+		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/single.php",
 		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/category.php",
 		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/home.php",
 		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/index.php",
 		"/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/natureandphotography/archive.php",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/archive.php",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/widgets/widgets-social-networks.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-custom-made.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-custom-made.php",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/widgets/widgets-recent-posts.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/widgets/widgets-social-networks.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/widgets/widgets-social-networks.php",
 		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-widgets.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/theloop.php",
 		"/D/xampp/htdocs/notwithoutsalt/wp-local-config.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/front-page.php",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/framework/admin/post-types/portfolio.php",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/framework/admin/post-types/testimonials.php",
 		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-custom-posts.php",
@@ -636,8 +742,6 @@
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/framework/actions/post.php",
 		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/fonts/stylesheet.css",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/header.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/footer.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/header.php",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/single.php",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/Divi 2.1.2/Divi 2.1.2/functions.php",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/Divi 2.1.2/Divi 2.1.2/includes/widgets/widget-ads.php",
@@ -648,8 +752,6 @@
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/framework/actions/general.php",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/framework/actions/index.php",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/framework/functions/ajax-search.php",
-		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/framework/functions/post-pagination.php",
-		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/framework/functions/general-functions.php",
 		"/D/GnRock/Projects/Web Development/Wordpress Things/Themes/jupiter/framework/functions/enqueue-front-scripts.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/footer.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/front-page.php",
@@ -657,10 +759,8 @@
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/archive-video.php",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/single-video.php",
 		"/D/GnRock/Projects/Web Development/Bootstrap/Bootstrap Practice/bootstrap-3.3.5-dist/css/bootstrap.css",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/style.scss",
 		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/functions/functions-scripts.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-scripts.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-scripts.php",
 		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/installment-readme.txt",
 		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/bower_components/bootstrap/dist/css/bootstrap.css",
 		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/bower_components/bootstrap/grunt/configBridge.json",
@@ -668,7 +768,6 @@
 		"/D/GnRock/Projects/Web Development/Bootstrap/Bootstrap Practice/bootstrap-3.3.5-dist/Template.html",
 		"/C/Users/ginsk_000/Desktop/index.html",
 		"/D/GnRock/Projects/Web Development/Javascript/Javascript Plugins.txt",
-		"/D/GnRock/Documents/Important User and Password and Other Details.txt",
 		"/C/Users/ginsk_000/Desktop/Interview Questions.txt",
 		"/D/GnRock/Documents/Resume/Portfolios/Jack Harlem/details.txt",
 		"/D/GnRock/Documents/Resume/Portfolios/Ampa Enterprise/details.txt",
@@ -700,45 +799,7 @@
 		"/D/xampp/htdocs/iamfoodblog/wp-content/themes/realest/404.php",
 		"/D/GnRock/Projects/Practice Practice/CSS Practice/Off The Past/off the past.html",
 		"/D/GnRock/Projects/Practice Practice/CSS Practice/Made By Jack/index.html",
-		"/D/GnRock/Projects/Practice Practice/CSS Practice/First Shape Countdown Landing Page/js/main.js",
-		"/D/GnRock/Projects/Practice Practice/CSS Practice/BonFire/bonfire.html",
-		"/D/GnRock/Projects/Elevated Business/widgets.php",
-		"/D/GnRock/Documents/Resume/Portfolios/FME Finance/details.txt",
-		"/D/GnRock/Documents/Resume/Portfolios/Aurora Adventures/details.txt",
-		"/D/GnRock/Documents/Resume/Portfolios/Global Office Machines/details.txt",
-		"/D/GnRock/Documents/Resume/Portfolios/Cutting Edge/details.txt",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/index.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/home.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/home.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-images.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/plugins.txt",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/read me.txt",
-		"/D/GnRock/Projects/Web Development/Wordpress Things/Plugins/PLUGINS.txt",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/bower_components/flexslider/flexslider.css",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-config.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-widgets.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-theme-options.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-shortcodes.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-post.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-menus-bootstrap-walker.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-menus.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-images.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-custom-taxonomies.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-comments.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions/functions-breadcrumbs.php",
-		"/D/GnRock/Projects/Practice Practice/Codes and Templates/Wordpress/Wordpress Starter Theme/wp-content/themes/realest/functions.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/style.css",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/package.json",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-menus.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-theme-options.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-shortcodes.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-post.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-menus-bootstrap-walker.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-custom-taxonomies.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-comments.php",
-		"/D/xampp/htdocs/notwithoutsalt/wp-content/themes/realest/functions/functions-breadcrumbs.php",
-		"/D/xampp/htdocs/whitneya/wp-content/themes/realest/style.css"
+		"/D/GnRock/Projects/Practice Practice/CSS Practice/First Shape Countdown Landing Page/js/main.js"
 	],
 	"find":
 	{
@@ -756,6 +817,32 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"/a>",
+			"<a",
+			"?>",
+			"<?php",
+			"div",
+			"'#load-more'",
+			"button",
+			"loadmore-p a",
+			"\"",
+			"pbd-alp-load-posts",
+			"<div class=\"col-md-3 col-lg-3 col-md-offset-0 col-lg-offset-0 top-padding text-sm-center\">",
+			"<img src=\"images/mascot-kitty.png\" alt=\"mascot-kitty.png\">",
+			"<div class=\"col-md-3 col-lg-3 col-md-offset-0 col-lg-offset-0 col-sm-offset-4 col-xs-offset-4 top-padding\">",
+			"<div class=\"col-md-3 col-lg-3 col-sm-offset-4 col-xs-offset-4 top-padding\">",
+			"<div class=\"col-md-3 col-lg-3 col-sm-offset-4 col-xs-offset-4\">",
+			"<div class=\"col-md-3 col-lg-3 col-sm-offset-4\">",
+			"<div class=\"col-md-3 col-lg-3\">",
+			"container",
+			"span",
+			"$paged",
+			"paged",
+			"$query",
+			"cite",
+			"6",
+			"0",
+			"h",
 			"navbar-nav",
 			";",
 			"!important;",
@@ -857,33 +944,7 @@
 			".=",
 			"<?php",
 			"facebook",
-			"Facebook",
-			"facebook",
-			"Facebook",
-			"facebook",
-			"Facebook",
-			"facebook",
-			"twitter",
-			"title",
-			"20",
-			"47",
-			"50",
-			"facebook",
-			"page",
-			"10px",
-			"post",
-			"div",
-			"linkedin_url",
-			"nnp",
-			"<h2",
-			"e-text",
-			"text",
-			"</li>",
-			"</a>",
-			"row",
-			"ner\">",
-			"row",
-			"4"
+			"Facebook"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -901,16 +962,75 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "header.php",
+					"file": "front-page.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3721,
+						"buffer_size": 2817,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2442,
+								2442
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 949.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "functions/functions-scripts.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1301,
+								1301
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "functions.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 2369,
 						"regions":
 						{
 						},
@@ -923,31 +1043,96 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 756.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "footer.php",
+					"buffer": 3,
+					"file": "js/realest.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 549,
+						"buffer_size": 1793,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								549,
-								549
+								415,
+								415
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pagelooper.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "functions/functions-custom-made.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								221,
+								221
 							]
 						],
 						"settings":
@@ -959,65 +1144,56 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "single.php",
+					"buffer": 6,
+					"file": "/D/GnRock/Projects/Web Development/upwork_template.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1849,
+						"buffer_size": 2342,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								667,
-								658
+								1819,
+								1819
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 54.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 3,
-					"file": "front-page.php",
+					"buffer": 7,
+					"file": "/D/xampp/htdocs/backup/natureandphotography/wp-content/themes/twentyfifteen/index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2472,
+						"buffer_size": 1765,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1641,
-								1574
+								1553,
+								1266
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
@@ -1029,62 +1205,59 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "style.scss",
+					"buffer": 8,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4352,
+						"buffer_size": 448,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2907,
-								2819
+								448,
+								448
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (SL).tmTheme",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2119.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "widgets/widgets-social-networks.php",
+					"buffer": 9,
+					"file": "/D/GnRock/Projects/Web Development/Wordpress Things/wordpress template/wp-content/themes/twentyfifteen/content.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8966,
+						"buffer_size": 1702,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7301,
-								7301
+								1197,
+								1197
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3672.0,
+						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]
@@ -1118,7 +1291,7 @@
 		"cols":
 		[
 			0.0,
-			0.482905982906,
+			0.5,
 			1.0
 		],
 		"rows":

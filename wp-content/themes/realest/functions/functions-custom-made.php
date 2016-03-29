@@ -1,5 +1,55 @@
 <?php 
+class Realest
+{
+	public static function custom_pager() {
+		global $wp_query;
+		$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+		echo '<ul class="pager">';
+		if($paged == 1 && $paged < $wp_query->max_num_pages) {
+			echo '<li><a href="'. get_pagenum_link($paged+1) .'">Older Posts</a></li>';
+		}
+		elseif($paged == $wp_query->max_num_pages) {
+			echo '<li><a href="'. get_pagenum_link($paged-1) .'">Newer Posts</a></li>';
+		}
+		else {
+			echo '<li><a href="'. get_pagenum_link($paged+1) .'">Older Posts</a></li>';
+			echo '<li><a href="'. get_pagenum_link($paged-1) .'">Newer Posts</a></li>';
+		}
+		echo '</ul>';
+	}
+	public static function custom_pagination() {
+		global $wp_query;
+		$big = 999999999;
+		$pages = paginate_links(array(
+		    'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+		    'format' => '?page=%#%',
+		    'current' => max(1, get_query_var('paged')),
+		    'total' => $wp_query->max_num_pages,
+		    'prev_next' => false,
+		    'type' => 'array',
+		    'prev_next' => TRUE,
+		    'prev_text' => '&larr; Previous',
+		    'next_text' => 'Next &rarr;',
+		        ));
+		if (is_array($pages)) {
+		    $current_page = ( get_query_var('paged') == 0 ) ? 1 : get_query_var('paged');
+		    echo '<ul class="pagination">';
+		    foreach ($pages as $i => $page) {
+		        if ($current_page == 1 && $i == 0) {
+		            echo "<li class='active'>$page</li>";
+		        } else {
+		            if ($current_page != 1 && $current_page == $i) {
+		                echo "<li class='active'>$page</li>";
+		            } else {
+		                echo "<li>$page</li>";
+		            }
+		        }
+		    }
+		    echo '</ul>';
+		}
+	}
 
+}
 /*
 	==================================================
 	| Custom Made Function
@@ -76,16 +126,14 @@ function rl_category_pagination() {
 	$this_post_position = array_search($this_post_ID,$posts);
 	$next_post_position = $this_post_position + 1;
 	$prev_post_position = $this_post_position - 1;
-	echo '<div class="' .$class['class']. '">';
 	if ($prev_post_position >= 0) {
 		$prev_post_ID = array_slice($posts, $prev_post_position ,1);
-		echo '<a class="'.$class['leftclass'].'" href="' . get_post_permalink($prev_post_ID[0]) . '">&laquo; ' . get_post($prev_post_ID[0])->post_title . '</a>';
+		echo '<li class="nav-list"><a class="'.$class['leftclass'].'" href="' . get_post_permalink($prev_post_ID[0]) . '"><i class="fa fa-arrow-left"></i></a></li>';
 	}
 	if ($next_post_position < count($posts) ) {
 		$next_post_ID = array_slice($posts, $next_post_position ,1);
-		echo '<a class="'.$class['rightclass'].'" href="' . get_post_permalink($next_post_ID[0]) . '">' . get_post($next_post_ID[0])->post_title . ' &raquo;</a>';
+		echo '<li class="nav-list"><a class="'.$class['rightclass'].'" href="' . get_post_permalink($next_post_ID[0]) . '"><i class="fa fa-arrow-right"></i></a></li>';
 	}
-	echo '</div>';
  }
  	
 
@@ -179,47 +227,89 @@ if(!function_exists('rl_similar_posts')) {
 }
 
 
+/**
+ * [rl_custom_pagination - paginate links]
+ * if reading settings is your latest post, use query var paged in your args
+ * set blog pages show at most 1 to remove error page not found(404) in the succeeding pages
+ * if set as static pages. pages 1 , 2 ,3 and so on will output same post with page 1
+ * if set as latest post but not set blog page show at most 1, pages after 1 will be PAGE NOT FOUND
+ *
+ * if reading settings set as static page but use query var 'page', the pagination will work
+ * 
+ * @return [type] [outputs prev 1 2 3 .. .. 9 10 next]
+ */
+function rl_custom_paginate() {
+    global $wp_query;
+    $big = 999999999;
+    $pages = paginate_links(array(
+        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+        'format' => '?page=%#%',
+        'current' => max(1, get_query_var('paged')),
+        'total' => $wp_query->max_num_pages,
+        'prev_next' => false,
+        'type' => 'array',
+        'prev_next' => TRUE,
+        'prev_text' => '&larr; Previous',
+        'next_text' => 'Next &rarr;',
+            ));
+    if (is_array($pages)) {
+        $current_page = ( get_query_var('paged') == 0 ) ? 1 : get_query_var('paged');
+        echo '<ul class="pagination">';
+        foreach ($pages as $i => $page) {
+            if ($current_page == 1 && $i == 0) {
+                echo "<li class='active'>$page</li>";
+            } else {
+                if ($current_page != 1 && $current_page == $i) {
+                    echo "<li class='active'>$page</li>";
+                } else {
+                    echo "<li>$page</li>";
+                }
+            }
+        }
+        echo '</ul>';
+    }
+}
+/**
+ * [rl_custom_pager - paginate links]
+ * if reading settings is your latest post, use query var paged in your args
+ * set blog pages show at most 1 to remove error page not found(404) in the succeeding pages
+ * if set as static pages. pages 1 , 2 ,3 and so on will output same post with page 1
+ * if set as latest post but not set blog page show at most 1, pages after 1 will be PAGE NOT FOUND
+ *
+ * if reading settings set as static page but use query var 'page', the pagination will work
+ * @return [type] [outputs <<older link     newer link>>]
+ */
+function rl_custom_pager() {
+	global $wp_query;
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+	echo '<ul class="pager">';
+	if($paged == 1 && $paged < $wp_query->max_num_pages) {
+		echo '<li><a href="'. get_pagenum_link($paged+1) .'">Older Posts</a></li>';
+	}
+	elseif($paged == $wp_query->max_num_pages) {
+		echo '<li><a href="'. get_pagenum_link($paged-1) .'">Newer Posts</a></li>';
+	}
+	else {
+		echo '<li><a href="'. get_pagenum_link($paged+1) .'">Older Posts</a></li>';
+		echo '<li><a href="'. get_pagenum_link($paged-1) .'">Newer Posts</a></li>';
+	}
+	echo '</ul>';
 
-// WordPress Paginate Links Function
-// http://codex.wordpress.org/Function_Reference/paginate_links
-//http://design.sparklette.net/teaches/how-to-add-wordpress-pagination-without-a-plugin/
-function pagination($pages = '', $range = 4)
-{  
-     $showitems = ($range * 2)+1;  
- 
-     global $paged;
-     if(empty($paged)) $paged = 1;
- 
-     if($pages == '')
-     {
-         global $wp_query;
-         $pages = $wp_query->max_num_pages;
-         if(!$pages)
-         {
-             $pages = 1;
-         }
-     }   
- 
-     if(1 != $pages)
-     {
-         echo "<div class=\"pagination\"><span>Page ".$paged." of ".$pages."</span>";
-         if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<a href='".get_pagenum_link(1)."'>&laquo; First</a>";
-         if($paged > 1 && $showitems < $pages) echo "<a href='".get_pagenum_link($paged - 1)."'>&lsaquo; Previous</a>";
- 
-         for ($i=1; $i <= $pages; $i++)
-         {
-             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
-             {
-                 echo ($paged == $i)? "<span class=\"current\">".$i."</span>":"<a href='".get_pagenum_link($i)."' class=\"inactive\">".$i."</a>";
-             }
-         }
- 
-         if ($paged < $pages && $showitems < $pages) echo "<a href=\"".get_pagenum_link($paged + 1)."\">Next &rsaquo;</a>";  
-         if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<a href='".get_pagenum_link($pages)."'>Last &raquo;</a>";
-         echo "</div>\n";
-     }
 }
 
+
+function rl_load_more() {
+	global $wp_query;
+	$max = $wp_query->max_num_pages;
+	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+	echo "<a id='load-more' class='btn btn-default text-center'>Load more posts</a>";
+	wp_localize_script( 'realestjs', 'data', array(
+		'startPage' => $paged,
+		'maxPages' => $max,
+		'nextLink' => next_posts($max,false)
+		)
+	);
+}
 
 
 
